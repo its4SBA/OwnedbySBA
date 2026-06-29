@@ -52,8 +52,7 @@ export const SKILL_GROUPS = [
 
 export const CURRENT_BUILD = {
   title: "Currently building TrackMe",
-  description: "A personal app and website concept for tracking movies, series, and anime in one organized place.",
-  highlights: ["Movies", "Series", "Anime", "Personal watch lists", "Progress tracking", "Clean dashboard experience"]
+  description: "A personal app and website concept for keeping movies, series, and anime organized in one clean experience."
 };
 
 export const SERVICES = [

@@ -50,12 +50,6 @@ export default function Home() {
               </a>
             ))}
           </div>
-          <a
-            href="#connect"
-            className="rounded-full border border-white/10 bg-white/[0.04] px-4 py-2 text-xs font-semibold text-slate-200 transition hover:-translate-y-0.5 hover:border-slate-300/25 hover:bg-white/[0.08]"
-          >
-            Contact
-          </a>
         </nav>
       </header>
 
@@ -213,14 +207,10 @@ export default function Home() {
       <section id="current-build" className="relative z-10 px-5 py-20 sm:px-6">
         <div className="mx-auto max-w-5xl">
           <SectionHeading eyebrow="Current Build" title={CURRENT_BUILD.title} description={CURRENT_BUILD.description} />
-          <Card className="p-6 sm:p-8">
-            <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
-              {CURRENT_BUILD.highlights.map((highlight) => (
-                <div key={highlight} className="rounded-2xl border border-white/10 bg-black/20 px-4 py-4 text-center text-sm font-medium text-slate-300">
-                  {highlight}
-                </div>
-              ))}
-            </div>
+          <Card className="mx-auto max-w-2xl p-6 text-center sm:p-8">
+            <p className="text-base leading-7 text-slate-300">
+              TrackMe is currently in progress as a personal product focused on simple organization, clear tracking, and a polished user experience.
+            </p>
           </Card>
         </div>
       </section>
@@ -234,14 +224,14 @@ export default function Home() {
           />
           <a
             href={`mailto:${PROFILE.email}`}
-            className="mx-auto mb-7 flex max-w-md items-center gap-4 rounded-3xl border border-white/10 bg-white/[0.035] p-4 text-left shadow-[0_0_70px_rgba(129,140,248,0.07)] transition duration-300 hover:-translate-y-0.5 hover:border-slate-300/25 hover:bg-white/[0.06]"
+            className="mx-auto mb-7 flex max-w-sm items-center gap-3 rounded-2xl border border-white/10 bg-white/[0.03] px-4 py-3 text-left shadow-[0_0_55px_rgba(129,140,248,0.05)] transition duration-300 hover:-translate-y-0.5 hover:border-slate-300/25 hover:bg-white/[0.055]"
           >
-            <span className="grid size-12 shrink-0 place-items-center rounded-2xl border border-white/10 bg-black/25 text-violet-200">
-              <Mail aria-hidden="true" className="size-5" />
+            <span className="grid size-10 shrink-0 place-items-center rounded-xl border border-white/10 bg-black/25 text-violet-200">
+              <Mail aria-hidden="true" className="size-4" />
             </span>
             <span>
-              <span className="block text-xs uppercase tracking-[0.28em] text-slate-500">Direct contact</span>
-              <span className="mt-1 block text-base font-semibold text-slate-100">{PROFILE.email}</span>
+              <span className="block text-[0.65rem] uppercase tracking-[0.26em] text-slate-500">Direct contact</span>
+              <span className="mt-1 block text-sm font-semibold text-slate-100">{PROFILE.email}</span>
             </span>
           </a>
           <SocialLinks />
