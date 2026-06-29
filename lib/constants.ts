@@ -1,5 +1,5 @@
 import type { LucideIcon } from "lucide-react";
-import { BriefcaseBusiness, Camera, Code2, Mail, Music2, X } from "lucide-react";
+import { BriefcaseBusiness, Code2 } from "lucide-react";
 
 export const SITE_URL = "https://ownedbysba.dev";
 
@@ -99,9 +99,5 @@ export type SocialLink = {
 
 export const SOCIAL_LINKS: SocialLink[] = [
   { label: "LinkedIn", href: "https://www.linkedin.com/in/salmaalaleeli/", icon: BriefcaseBusiness },
-  { label: "GitHub", href: "https://github.com/its4SBA", icon: Code2 },
-  { label: "Email", href: `mailto:${PROFILE.email}`, icon: Mail },
-  { label: "X", href: "https://x.com/its3waija", icon: X },
-  { label: "Instagram", href: "https://www.instagram.com/ownedbysba", icon: Camera },
-  { label: "TikTok", href: "https://www.tiktok.com/@ownedbysba", icon: Music2 }
+  { label: "GitHub", href: "https://github.com/its4SBA", icon: Code2 }
 ];

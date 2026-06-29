@@ -1,4 +1,4 @@
-import { ArrowUpRight, Circle, MapPin, Orbit } from "lucide-react";
+import { ArrowUpRight, Circle, Mail, MapPin, Orbit } from "lucide-react";
 
 import { SectionHeading } from "@/components/SectionHeading";
 import { SocialLinks } from "@/components/SocialLinks";
@@ -227,8 +227,17 @@ export default function Home() {
             title="Let’s connect with purpose."
             description="Open to freelance work, collaborations, personal brand opportunities, and meaningful career conversations."
           />
-          <a href={`mailto:${PROFILE.email}`} className="mb-6 inline-flex rounded-full border border-white/10 bg-white/[0.03] px-5 py-3 text-sm font-medium text-slate-200 transition hover:border-slate-300/30 hover:bg-white/[0.07]">
-            {PROFILE.email}
+          <a
+            href={`mailto:${PROFILE.email}`}
+            className="mx-auto mb-7 flex max-w-md items-center gap-4 rounded-3xl border border-white/10 bg-white/[0.035] p-4 text-left shadow-[0_0_70px_rgba(129,140,248,0.07)] transition duration-300 hover:-translate-y-0.5 hover:border-slate-300/25 hover:bg-white/[0.06]"
+          >
+            <span className="grid size-12 shrink-0 place-items-center rounded-2xl border border-white/10 bg-black/25 text-violet-200">
+              <Mail aria-hidden="true" className="size-5" />
+            </span>
+            <span>
+              <span className="block text-xs uppercase tracking-[0.28em] text-slate-500">Direct contact</span>
+              <span className="mt-1 block text-base font-semibold text-slate-100">{PROFILE.email}</span>
+            </span>
           </a>
           <SocialLinks />
         </div>
