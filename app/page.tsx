@@ -7,7 +7,6 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Separator } from "@/components/ui/separator";
 import {
   CREDENTIALS,
-  CURRENT_BUILD,
   INTRODUCTION,
   NAV_ITEMS,
   PROFILE,
@@ -200,17 +199,6 @@ export default function Home() {
                 </a>
               </Button>
             </div>
-          </Card>
-        </div>
-      </section>
-
-      <section id="current-build" className="relative z-10 px-5 py-20 sm:px-6">
-        <div className="mx-auto max-w-5xl">
-          <SectionHeading eyebrow="Current Build" title={CURRENT_BUILD.title} description={CURRENT_BUILD.description} />
-          <Card className="mx-auto max-w-2xl p-6 text-center sm:p-8">
-            <p className="text-base leading-7 text-slate-300">
-              TrackMe is currently in progress as a personal product focused on simple organization, clear tracking, and a polished user experience.
-            </p>
           </Card>
         </div>
       </section>
