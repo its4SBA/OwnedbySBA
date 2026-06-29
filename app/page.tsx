@@ -32,24 +32,29 @@ export default function Home() {
       <header className="fixed left-0 right-0 top-0 z-50 px-4 py-4 sm:px-6">
         <nav
           aria-label="Main navigation"
-          className="mx-auto flex max-w-6xl items-center justify-between rounded-full border border-white/10 bg-black/35 px-4 py-3 shadow-[0_18px_80px_rgba(0,0,0,0.35)] backdrop-blur-xl"
+          className="mx-auto flex max-w-5xl items-center justify-between gap-4 rounded-full border border-white/10 bg-black/45 px-4 py-3 shadow-[0_18px_80px_rgba(0,0,0,0.38)] backdrop-blur-xl sm:px-5"
         >
-          <a href="#home" className="text-sm font-semibold tracking-[0.28em] text-slate-100">
-            SBA
+          <a href="#home" className="group flex items-center gap-3">
+            <span className="text-sm font-semibold tracking-[0.28em] text-slate-100">SBA</span>
+            <span className="hidden h-4 w-px bg-white/10 sm:block" />
+            <span className="hidden text-xs font-medium text-slate-500 transition group-hover:text-slate-300 sm:block">Salma Alaleeli</span>
           </a>
-          <div className="hidden items-center gap-1 md:flex">
+          <div className="hidden items-center gap-1 rounded-full border border-white/[0.06] bg-white/[0.025] p-1 md:flex">
             {NAV_ITEMS.map((item) => (
               <a
                 key={item.href}
                 href={item.href}
-                className="rounded-full px-3 py-2 text-xs text-slate-400 transition hover:bg-white/[0.05] hover:text-slate-100"
+                className="rounded-full px-3 py-1.5 text-xs font-medium text-slate-400 transition hover:bg-white/[0.07] hover:text-slate-100"
               >
                 {item.label}
               </a>
             ))}
           </div>
-          <a href="#connect" className="text-xs text-slate-400 transition hover:text-slate-100">
-            {PROFILE.brand}
+          <a
+            href="#connect"
+            className="rounded-full border border-white/10 bg-white/[0.04] px-4 py-2 text-xs font-semibold text-slate-200 transition hover:-translate-y-0.5 hover:border-slate-300/25 hover:bg-white/[0.08]"
+          >
+            Contact
           </a>
         </nav>
       </header>

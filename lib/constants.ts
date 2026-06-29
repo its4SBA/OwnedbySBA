@@ -21,7 +21,7 @@ export const NAV_ITEMS = [
   { label: "Home", href: "#home" },
   { label: "About", href: "#about" },
   { label: "Skills", href: "#skills" },
-  { label: "What I Do", href: "#what-i-do" },
+  { label: "Services", href: "#what-i-do" },
   { label: "Credentials", href: "#credentials" },
   { label: "Connect", href: "#connect" }
 ];
